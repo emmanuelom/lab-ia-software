@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Visión por Computadora",
+    "description": "Segmentación, clasificación y reconstrucción; pipelines reproducibles."
+  },
+  {
+    "title": "Optimización / MLOps",
+    "description": "Descenso del gradiente, momento, Nesterov, Newton; CI/CD, despliegue y monitoreo."
+  },
+  {
+    "title": "Software Científico",
+    "description": "Diseño de librerías, APIs docentes, visualización y automatización."
+  }
+]

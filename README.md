@@ -1,0 +1,1 @@
+# Sitio del Laboratorio en IA y Desarrollo de Software\n\nPublica en GitHub Pages: Settings → Pages → Deploy from branch → main/root.\n

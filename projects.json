@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Segmentación de imágenes médicas",
+    "summary": "UNet/UNet++ con SMP, métricas Dice/IoU y comparación de optimizadores.",
+    "tags": ["Visión", "PyTorch", "Salud"],
+    "status": "En curso",
+    "members": ["Dra. Dora Alvarado", "Est. Ing. IA — Becario(a)"],
+    "image": "assets/projects/segmed_banner.png"
+  },
+  {
+    "title": "Optimización para IA",
+    "summary": "Descenso, momento, Nesterov y Newton con visualizaciones interactivas.",
+    "tags": ["Optimización", "Docencia"],
+    "status": "Finalizado",
+    "members": ["Dr. Emmanuel Ovalle"]
+  }
+]

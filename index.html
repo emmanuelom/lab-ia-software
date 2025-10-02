@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laboratorio en Inteligencia Artificial y Desarrollo de Software</title>
+  <meta name="description" content="Laboratorio en IA y Desarrollo de Software — Universidad De La Salle Bajío" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="assets/logo_1.png" alt="Logo del Laboratorio" class="logo" />
+      <div class="titles">
+        <h1>Laboratorio en Inteligencia Artificial<br/>y Desarrollo de Software</h1>
+        <p class="subtitle">Universidad De La Salle Bajío</p>
+      </div>
+      <nav class="nav">
+        <a href="#investigacion">Investigación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#publicaciones">Publicaciones</a>
+        <a href="#contacto">Contacto</a>
+        <button id="modeToggle" aria-label="Cambiar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container" id="hero-content">
+      <!-- El contenido se cargará dinámicamente -->
+    </div>
+  </section>
+
+  <section id="investigacion" class="section">
+    <div class="container">
+      <h3>Áreas de investigación</h3>
+      <div id="areas" class="cards three"></div>
+      <p class="note">Edita <code>areas.json</code> para actualizar esta sección.</p>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section alt">
+    <div class="container">
+      <h3>Proyectos destacados</h3>
+      <div id="projects" class="cards three"></div>
+      <p class="note">Edita <code>projects.json</code> para actualizar esta sección.</p>
+    </div>
+  </section>
+
+  <section id="equipo" class="section">
+    <div class="container">
+      <h3>Equipo</h3>
+      <div id="team" class="team-grid"></div>
+      <p class="note">Edita <code>team.json</code> y coloca fotos en <code>assets/team/</code>.</p>
+    </div>
+  </section>
+
+  <section id="publicaciones" class="section alt">
+    <div class="container">
+      <h3>Publicaciones</h3>
+      <p>Añade <code>publications.html</code> generado desde <code>publications.bib</code>.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="section alt">
+    <div class="container">
+      <h3>Contacto</h3>
+      <p>Buscamos socios en academia, industria y sector público. Para propuestas de investigación, consultoría o estancias, escríbenos a <a href="mailto:eovalle@lasallebajio.edu.mx">eovalle@lasallebajio.edu.mx</a>.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Laboratorio en IA y Desarrollo de Software</small>
+      <a href="#" class="backtotop">↑ Arriba</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
