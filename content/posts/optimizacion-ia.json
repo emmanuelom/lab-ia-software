@@ -1,0 +1,16 @@
+{
+    "slug": "optimizacion-ia",
+    "title": "Optimización para IA",
+    "author": "Dr. Emmanuel Ovalle",
+    "date": "2023-09-15",
+    "tags": [
+        "Optimización",
+        "Docencia"
+    ],
+    "status": "Finalizado",
+    "summary": "Descenso, momento, Nesterov y Newton con visualizaciones interactivas.",
+    "members": [
+        "Dr. Emmanuel Ovalle"
+    ],
+    "body": "<h2>Fundamentos de Optimización</h2><p>Este material docente incluye notebooks interactivos para entender cómo funcionan los algoritmos de optimización de primer y segundo orden.</p><h3>Algoritmos cubiertos</h3><ul><li>Descenso de Gradiente Estocástico (SGD)</li><li>Momentum y Nesterov</li><li>Algoritmos adaptativos (Adam, RMSProp)</li><li>Método de Newton</li></ul>"
+}
