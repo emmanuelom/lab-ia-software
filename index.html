@@ -1,83 +1,164 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laboratorio en Inteligencia Artificial y Desarrollo de Software</title>
   <meta name="description" content="Laboratorio en IA y Desarrollo de Software — Universidad De La Salle Bajío" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <img src="assets/logo_1.png" alt="Logo del Laboratorio" class="logo" />
       <div class="titles">
-        <h1>Laboratorio en Inteligencia Artificial<br/>y Desarrollo de Software</h1>
+        <h1>Laboratorio en Inteligencia Artificial<br />y Desarrollo de Software</h1>
         <p class="subtitle">Universidad De La Salle Bajío</p>
       </div>
-      <nav class="nav">
+      <button id="menu-toggle" aria-label="Abrir menú" class="menu-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="#" onclick="window.history.pushState({}, '', '/'); location.reload(); return false;">Inicio</a>
         <a href="#investigacion">Investigación</a>
-        <a href="#proyectos">Proyectos</a>
+        <a href="#proyectos">Blog / Proyectos</a>
         <a href="#equipo">Equipo</a>
-        <a href="#publicaciones">Publicaciones</a>
         <a href="#contacto">Contacto</a>
         <button id="modeToggle" aria-label="Cambiar tema">🌙</button>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container" id="hero-content">
-      <!-- El contenido se cargará dinámicamente -->
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="hero" id="hero-section">
+      <div class="container" id="hero-content">
+        <!-- El contenido se cargará dinámicamente -->
+      </div>
+    </section>
 
-  <section id="investigacion" class="section">
-    <div class="container">
-      <h3>Áreas de investigación</h3>
-      <div id="areas" class="cards three"></div>
-      <p class="note">Edita <code>areas.json</code> para actualizar esta sección.</p>
-    </div>
-  </section>
+    <!-- Post Detail View (Hidden by default) -->
+    <section id="post-detail" class="section" style="display: none;">
+      <div class="container">
+        <button id="back-btn" class="btn ghost">← Volver</button>
+        <article id="post-content" class="blog-post">
+          <!-- Dynamic Post Content -->
+        </article>
+      </div>
+    </section>
 
-  <section id="proyectos" class="section alt">
-    <div class="container">
-      <h3>Proyectos destacados</h3>
-      <div id="projects" class="cards three"></div>
-      <p class="note">Edita <code>projects.json</code> para actualizar esta sección.</p>
-    </div>
-  </section>
+    <div id="home-sections">
+      <section id="investigacion" class="section">
+        <div class="container">
+          <h3>Áreas de investigación</h3>
+          <div id="areas" class="cards three"></div>
+        </div>
+      </section>
 
-  <section id="equipo" class="section">
-    <div class="container">
-      <h3>Equipo</h3>
-      <div id="team" class="team-grid"></div>
-      <p class="note">Edita <code>team.json</code> y coloca fotos en <code>assets/team/</code>.</p>
-    </div>
-  </section>
+      <section id="proyectos" class="section alt">
+        <div class="container">
+          <h3>Blog y Proyectos</h3>
+          <div id="projects" class="cards three"></div>
+        </div>
+      </section>
 
-  <section id="publicaciones" class="section alt">
-    <div class="container">
-      <h3>Publicaciones</h3>
-      <p>Añade <code>publications.html</code> generado desde <code>publications.bib</code>.</p>
-    </div>
-  </section>
+      <section id="equipo" class="section">
+        <div class="container">
+          <h3>Equipo</h3>
+          <div id="team" class="team-grid"></div>
+        </div>
+      </section>
 
-  <section id="contacto" class="section alt">
+      <section id="publicaciones" class="section alt">
+        <div class="container">
+          <h3>Publicaciones</h3>
+          <p>Añade <code>publications.html</code> generado desde <code>publications.bib</code>.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section id="contacto" class="section">
     <div class="container">
-      <h3>Contacto</h3>
-      <p>Buscamos socios en academia, industria y sector público. Para propuestas de investigación, consultoría o estancias, escríbenos a <a href="mailto:eovalle@lasallebajio.edu.mx">eovalle@lasallebajio.edu.mx</a>.</p>
+      <div class="contact-card">
+        <h3>¿Te interesa colaborar?</h3>
+        <p>Buscamos socios en academia, industria y sector público. Impulsa la innovación con nosotros a través de
+          estancias, consultoría o proyectos conjuntos.</p>
+        <a href="mailto:eovalle@lasallebajio.edu.mx" class="btn primary large">Contáctanos ahora</a>
+      </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>© <span id="year"></span> Laboratorio en IA y Desarrollo de Software</small>
-      <a href="#" class="backtotop">↑ Arriba</a>
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-brand">
+          <h4>Laboratorio IA</h4>
+          <p>Investigación y desarrollo de software de vanguardia en la Universidad De La Salle Bajío.</p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h5>Explora</h5>
+          <div class="footer-links">
+            <a href="#" onclick="window.scrollTo(0, 0); return false;">Inicio</a>
+            <a href="#investigacion">Investigación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#equipo">Equipo</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Contact -->
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <div class="footer-links">
+            <a href="mailto:eovalle@lasallebajio.edu.mx">eovalle@lasallebajio.edu.mx</a>
+            <span>Universidad De La Salle Bajío</span>
+            <span>León, Gto. México</span>
+          </div>
+        </div>
+
+        <!-- Col 4: Legal/Social -->
+        <div class="footer-col">
+          <h5>Síguenos</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Github"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>© <span id="year"></span> Laboratorio en IA y Desarrollo de Software</small>
+        <a href="#" class="backtotop">↑ Volver arriba</a>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>

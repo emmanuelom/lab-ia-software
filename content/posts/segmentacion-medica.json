@@ -1,0 +1,19 @@
+{
+    "slug": "segmentacion-medica",
+    "title": "Segmentación de imágenes médicas",
+    "author": "Dr. Emmanuel Ovalle",
+    "date": "2023-10-25",
+    "tags": [
+        "Visión",
+        "PyTorch",
+        "Salud"
+    ],
+    "status": "En curso",
+    "summary": "UNet/UNet++ con SMP, métricas Dice/IoU y comparación de optimizadores.",
+    "image": "assets/projects/segmed_banner.png",
+    "members": [
+        "Dra. Dora Alvarado",
+        "Est. Ing. IA — Becario(a)"
+    ],
+    "body": "<h2>Introducción</h2><p>La segmentación de imágenes médicas es un proceso fundamental en el diagnóstico asistido por computadora. En este proyecto exploramos el uso de arquitecturas como UNet y UNet++ para la identificación automática de regiones de interés.</p><h3>Metodología</h3><p>Utilizamos la librería Segmentation Models Pytorch (SMP) para experimentar con diferentes backbones (ResNet, EfficientNet) y funciones de pérdida.</p>"
+}
